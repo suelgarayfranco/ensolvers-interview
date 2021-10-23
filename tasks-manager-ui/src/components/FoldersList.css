@@ -1,0 +1,39 @@
+.folders-container{
+    width: 40%;    
+    font-family: 'Noto Sans Mono', monospace;
+}
+.folder{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.folder-name{
+    margin: 0;
+    font-size: 0.9em;
+}
+.items-link{
+    margin-left: auto;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.folder-delete{
+    margin-left: 2em;
+    margin-right: 1em;
+    font-size: 1.1em;
+    color:gray;
+}
+.folder-delete:hover{
+    transition: 0.15s ease-in 25ms;
+    cursor: pointer;
+    color:#F7941F;
+}
+.new-folder-container{
+    display: flex;
+    width: 40%;
+}
+.new-folder-container .form-input{
+    width: 60%;
+}
+.new-folder-container .form-btn{
+    margin-left: 1em;
+}

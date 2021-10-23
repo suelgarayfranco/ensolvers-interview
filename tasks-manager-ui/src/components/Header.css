@@ -1,0 +1,9 @@
+header{
+    display: flex;
+    width: 40%;
+}
+h1{
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 1.6em;
+    margin-right: auto;
+}

@@ -1,0 +1,12 @@
+.task-edit-form{
+    width: 40%;
+}
+.task-edit-form .form-input{
+    width: 60%;
+}
+.form-buttons {
+    margin-top: 1em;
+}
+#form-cancel-btn{
+    margin-left: 1em;
+}

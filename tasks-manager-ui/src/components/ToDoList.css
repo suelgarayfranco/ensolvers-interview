@@ -1,0 +1,47 @@
+.back-link{
+    width: 40%;
+    font-size: 1.5em;
+    color: gray;
+}
+.back-link:hover{
+    transition: 0.1s ease-in 25ms;
+    color:#F7941F;
+}
+.tasks-container{
+    width: 40%;
+}
+.task{
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans Mono', monospace;
+}
+.task-text{
+    margin: 0;
+    margin-left: 1em;
+    font-size: 0.9em;
+}
+.task-delete, .task-edit{
+    margin-right: 1em;
+    font-size: 1.1em;
+    color:gray;
+}
+.task-edit{
+    margin-left: auto;
+}
+.task-edit:hover, .task-delete:hover{
+    transition: 0.15s ease-in 25ms;
+    cursor: pointer;
+    color:#F7941F;
+}
+.new-task-container{
+    margin-top: 1em;
+    width: 40%;
+}
+.new-task-container .form-input{
+    width: 60%;
+}
+.new-task-container .form-btn{
+    margin-left: 1em;
+}
