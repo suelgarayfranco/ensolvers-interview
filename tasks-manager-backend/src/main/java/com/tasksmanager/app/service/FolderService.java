@@ -15,7 +15,4 @@ public interface FolderService {
 
         public void deleteById(Long id);
 
-       /* public Folder addTaskToFolder(Long folderId, Long taskId);
-
-        public Folder removeTaskFromFolder(Long folderId, Long taskId);*/
 }

@@ -1,7 +1,6 @@
 package com.tasksmanager.app.service;
 
 import com.tasksmanager.app.entities.Folder;
-import com.tasksmanager.app.entities.Task;
 import com.tasksmanager.app.repository.FolderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,8 +13,6 @@ public class FolderServiceImpl implements FolderService{
 
     @Autowired
     private FolderRepository folderRepository;
-    @Autowired
-    private TaskService taskService;
 
     @Override
     @Transactional(readOnly = true)
@@ -41,20 +38,5 @@ public class FolderServiceImpl implements FolderService{
         folderRepository.deleteById(id);
     }
 
-   /* public Folder addTaskToFolder(Long folderId, Long taskId){
-        Optional<Folder> folder = findById(folderId);
-        Optional<Task> task = taskService.findById(taskId);
-        task.get().setFolder(folder.get());
-        folder.get().addTask(task.get());
 
-        return folder.get();
-    }
-
-    public Folder removeTaskFromFolder(Long folderId, Long taskId){
-        Optional<Folder> folder = findById(folderId);
-        Optional<Task> task = taskService.findById(taskId);
-        folder.get().removeTask(task.get());
-
-        return folder.get();
-    }*/
 }

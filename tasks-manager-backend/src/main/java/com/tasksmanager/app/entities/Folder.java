@@ -14,13 +14,6 @@ public class Folder {
     @Column(length = 50, unique = true, nullable = false)
     private String name;
 
-    /*@OneToMany(
-            mappedBy = "folder",
-            cascade = CascadeType.ALL,
-            orphanRemoval = true
-    )
-    //@JoinColumn( name = "id_folder", referencedColumnName = "id")
-    private List<Task> tasks = new ArrayList<>();*/
 
     public Folder(){
     }
@@ -45,16 +38,4 @@ public class Folder {
         this.name = name;
     }
 
-    /*public List<Task> getTasks() {
-        return tasks;
-    }
-    public void setTasks(List<Task> tasks) {
-        this.tasks = tasks;
-    }
-    public void addTask(Task task){
-        tasks.add(task);
-    }
-    public void removeTask(Task task){
-        tasks.remove(task);
-    }*/
 }

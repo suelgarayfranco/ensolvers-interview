@@ -1,10 +1,7 @@
 package com.tasksmanager.app.controllers;
 
 import com.tasksmanager.app.entities.Folder;
-import com.tasksmanager.app.entities.Task;
 import com.tasksmanager.app.service.FolderService;
-import com.tasksmanager.app.service.TaskService;
-import com.tasksmanager.app.service.TaskServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,8 +19,6 @@ public class FolderController {
 
     @Autowired
     private FolderService folderService;
-    @Autowired
-    private TaskService taskService;
 
     @PostMapping
     public ResponseEntity<?> create(@RequestBody Folder folder){
